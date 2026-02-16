@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+	<listener class-name="testComponents.Listeners"></listener>
+	</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testComponents.TestBase"/>
+      <class name="testCasesEcommerce.TC_01_Register_User"/>
+      <class name="testCasesEcommerce.TC_02_Login_User_With_Correct_Email_Password"/>
+      <class name="testCasesEcommerce.TC_04_Logout_User"/>
+      <class name="testCasesEcommerce.TC_06_Contact_Us_Form"/>
+      <class name="testCasesEcommerce.TC_03_Login_User_With_Incorrect_Email_Password"/>
+      <class name="testCasesEcommerce.TC_07_Verify_TestCase_Page"/>
+      <class name="testCasesEcommerce.TC_05_Register_User_With_Existing_Email"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
