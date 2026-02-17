@@ -14,7 +14,12 @@ public class AccountCreatedPage extends BasePage {
         super(driver);
     }
 
+    
+    
     public void clickContinue() {
         driver.findElement(continueBtn).click();
     }
 }
+
+
+
